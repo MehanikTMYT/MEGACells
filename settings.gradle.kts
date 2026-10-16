@@ -18,6 +18,11 @@ run {
         rulesMode = RulesMode.PREFER_SETTINGS
 
         repositories {
+            // Fleet: our AE2 26.1 build (published to mavenLocal by ae-stack/core/Applied-Energistics-2)
+            mavenLocal {
+                content { includeModule("org.appliedenergistics", "appliedenergistics2") }
+            }
+
             maven {
                 name = "ModMaven (K4U-NL)"
                 url = uri("https://modmaven.dev/")
@@ -68,13 +73,13 @@ run {
 
         versionCatalogs {
             val mc = "26.1.2"
-            val nf = "$mc.80"
+            val nf = "$mc.114" // fleet: NeoForge 26.1.2.114 (upstream: .80)
             val maj = mc.substringBeforeLast('.')
 
             create("core") {
                 version("minecraft", mc)
                 version("neoforge", nf)
-                version("ae2", "$maj.10-beta")
+                version("ae2", "$maj.11-SNAPSHOT") // fleet: our AE2 fork (upstream: $maj.10-beta)
                 library("ae2", "org.appliedenergistics", "appliedenergistics2").versionRef("ae2")
             }
 
