@@ -73,7 +73,7 @@ run {
 
         versionCatalogs {
             val mc = "26.1.2"
-            val nf = "$mc.114" // fleet: NeoForge 26.1.2.114 (upstream: .80)
+            val nf = "$mc.122" // fleet: NeoForge 26.1.2.114 (upstream: .80)
             val maj = mc.substringBeforeLast('.')
 
             create("core") {

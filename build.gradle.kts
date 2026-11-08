@@ -79,8 +79,6 @@ dependencies {
 
     // compileOnly(integration.arseng)
     // "addonsRuntimeOnly"(integration.arseng)
-    // "dataCompileOnly"(integration.arsnouveau) { exclude("mezz.jei") }
-    // "addonsRuntimeOnly"(integration.arsnouveau) { exclude("mezz.jei") }
 
     // compileOnly(integration.appflux)
     // "addonsRuntimeOnly"(integration.appflux)
