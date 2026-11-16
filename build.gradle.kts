@@ -80,9 +80,10 @@ dependencies {
     // compileOnly(integration.arseng)
     // "addonsRuntimeOnly"(integration.arseng)
 
-    // compileOnly(integration.appflux)
-    // "addonsRuntimeOnly"(integration.appflux)
-    // "addonsRuntimeOnly"(integration.glodium)
+    compileOnly(integration.appflux)
+    "addonsRuntimeOnly"(integration.appflux)
+    // sync upstream26.1: applied-flux/glodium вернулись с совместимыми сборками (2ddc7a75)
+    "addonsRuntimeOnly"(integration.glodium)
 
     // compileOnly(integration.appex)
     // "addonsRuntimeOnly"(integration.appex)
